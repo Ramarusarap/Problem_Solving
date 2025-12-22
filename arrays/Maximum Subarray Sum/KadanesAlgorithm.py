@@ -17,3 +17,12 @@ class Solution:
             max_sum = max(max_sum, curr_sum)
 
         return max_sum
+
+
+Kadane’s Algorithm finds the maximum sum of a contiguous (consecutive) subarray in O(n) time and O(1) space.
+At each index, decide whether to extend the previous subarray or start a new one at the current element.
+
+Why it works
+1. If the running sum becomes worse than starting fresh, reset.
+2. Otherwise, keep extending.
+3. This local choice leads to the global optimum.
