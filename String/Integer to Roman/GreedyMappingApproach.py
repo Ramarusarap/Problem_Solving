@@ -13,7 +13,15 @@ class Solution:
         Space Complexity: O(1)
         - Output string size is bounded (max ~15 characters).
         """
+        #######################################
+        """
+        is O(1), because:
 
+        Max Roman symbols is fixed
+
+        Worst case (3888 → MMMDCCCLXXXVIII) still produces a bounded number of iteration
+        """
+        #######################################
         values = [
             1000, 900, 500, 400,
             100, 90, 50, 40,
